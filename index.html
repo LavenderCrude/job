@@ -21,19 +21,34 @@
 
         }
 
-        .material-symbols-outlined {
+        .material-symbols-outlined a{
             position: fixed;
-            color: rgb(0, 0, 0);
             background-color: rgb(255, 231, 231);
+            color: black;
             border-radius: 100%;
             padding: 20px;
             z-index: 1;
             margin: 0px 0px 0px -90px;
+            overflow: visible;
+            white-space: nowrap;
+            width: fit-content;
+            /* Set width to fit content */
+            animation: slide-in 1.5s ease-in-out forwards;
+            /* Animation properties */
             font-variation-settings:
                 'FILL' 0,
                 'wght' 400,
                 'GRAD' 0,
                 'opsz' 24
+        }
+        .material-symbols-outlined a:hover 
+        {
+            background-color: black;
+            color: white;
+            border-radius: 100%;
+            padding: 20px;
+            z-index: 1;
+            margin: 0px 0px 0px -90px;
         }
 
         .dv2 {
@@ -229,7 +244,7 @@
     </div>
     <div class="dv5">
         <span class="material-symbols-outlined">
-            <a href="https://www.linkedin.com" style="color: black; text-decoration: none;">chat</a>
+            <a href="https://www.linkedin.com" style=" text-decoration: none;">chat</a>
         </span>
         <div class="dv6"> Develop products that will amaze <br> our customers And yourself.</div>
         <div class="dv7">The Software Development team at AWS is responsible for leading, designing, and developing
